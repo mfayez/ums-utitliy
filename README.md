@@ -15,6 +15,8 @@ A Chrome Extension to automate downloading and uploading files on the university
 1. Clone or download this repository:
    ```bash
    git clone https://github.com/mfayez/ums-utitliy.git
+
+Direct download link:
     https://github.com/mfayez/ums-utitliy/archive/refs/heads/main.zip
 
 2. Open Chrome
