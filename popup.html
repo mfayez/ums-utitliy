@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portal Automation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    select {
+      width: 90%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Courses</h1>
+  <table id="coursesTable">
+    <thead>
+      <tr>
+        <th>
+          Course Name
+          <br>
+          <select id="courseNameFilter" data-column="0">
+            <option value="">All</option>
+          </select>
+        </th>
+        <th>
+          Control Team
+          <br>
+          <select id="controlTeamFilter" data-column="1">
+            <option value="">All</option>
+          </select>
+        </th>
+        <th>
+          Exam Type
+          <br>
+          <select id="examTypeFilter" data-column="2">
+            <option value="">All</option>
+          </select>
+        </th>
+        <th>Review</th>
+        <th>Download</th>
+        <th>Upload</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="6">Loading...</td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="popup.js"></script>
+</body>
+</html>
+
