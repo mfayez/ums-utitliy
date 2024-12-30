@@ -161,7 +161,7 @@ async function handleDownload(course) {
             const url = URL.createObjectURL(blob);
             const link = document.createElement("a");
             link.href = url;
-            link.download = `${course.courseName}_${course.examTypeName}.xlsx`;
+            link.download = `${course.examTypeName}_${course.courseName}_${course.controlTeamName}.xlsx`;
             link.click();
             URL.revokeObjectURL(url);
         } else {
