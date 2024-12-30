@@ -20,6 +20,6 @@ Direct download link:
     https://github.com/mfayez/ums-utitliy/archive/refs/heads/main.zip
 
 2. Open Chrome
-3. Go to chrome://extensions/
+3. Go to [chrome://extensions/](chrome://extensions/)
 4. Enable Developer Mode (Top Right Corner)
 5. Click on "Load unpacked" and choose the downloaded/extracted Folder in Step 1
