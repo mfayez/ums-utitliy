@@ -66,6 +66,7 @@ async function fetchCoursesFromPortal() {
                         controlTeamName: controlTeamName,
                         examTypeName: examTypeName,
                         previewUrl: `${baseServerUrl}/Backend/UnderGraduate/StudentCourseGrades?ControlTeamId=${controlTeamId}&CourseId=${courseId}&ExamTypeId=${examTypeId}`,
+                        reviewUrl: `${baseServerUrl}/Backend/UnderGraduate/ReviewStudentCourseGrades?ControlTeamId=${controlTeamId}&CourseId=${courseId}&ExamTypeId=${examTypeId}`,
                         downloadUrl: `${baseServerUrl}/Backend/UnderGraduate/StudentCourseGrades/ExportToExcel?TeamId=${controlTeamId}&CourseId=${courseId}&ExamTypeId=${examTypeId}`,
                         uploadUrl: `${baseServerUrl}/Backend/UnderGraduate/StudentCourseGrades/Upload?TeamId=${controlTeamId}&CourseId=${courseId}&ExamTypeId=${examTypeId}`,
                         controlTeamId: controlTeamId,

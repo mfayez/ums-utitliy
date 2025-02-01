@@ -48,13 +48,21 @@ async function fetchAndDisplayCourses() {
             examTypeCell.textContent = course.examTypeName;
             row.appendChild(examTypeCell);
 
-            // Review Button
+            // Data Entry Button
             const previewCell = document.createElement("td");
             const previewButton = document.createElement("button");
-            previewButton.textContent = "Review";
+            previewButton.textContent = "Data Entry";
             previewButton.addEventListener("click", () => handlePreview(course));
             previewCell.appendChild(previewButton);
             row.appendChild(previewCell);
+
+            // Review Button
+            const dataEntryCell = document.createElement("td");
+            const dataEntryButton = document.createElement("button");
+            dataEntryButton.textContent = "Review";
+            dataEntryButton.addEventListener("click", () => handleReview(course));
+            dataEntryCell.appendChild(dataEntryButton);
+            row.appendChild(dataEntryCell);
 
             // Download Button
             const downloadCell = document.createElement("td");
@@ -126,6 +134,10 @@ function filterTable() {
             row.style.display = "none"; // Hide the row
         }
     });
+}
+
+async function handleReview(course) {
+    chrome.tabs.create({ url: course.reviewUrl });
 }
 
 async function handlePreview(course) {
